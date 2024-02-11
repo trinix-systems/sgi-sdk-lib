@@ -5,7 +5,7 @@ export declare class SgiSDK extends IService {
     private static _instance;
     private htpUtility;
     private constructor();
-    instance(): SgiSDK;
+    static instance(): SgiSDK;
     init(httpService: HttpService): void;
     getCentre(code: string, username: string, token: string): Promise<CentreModel | null>;
     getCentres(username: string, token: string): Promise<CentreModel[] | null>;

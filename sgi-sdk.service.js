@@ -61,7 +61,7 @@ var SgiSDK = /** @class */ (function (_super) {
     function SgiSDK() {
         return _super.call(this) || this;
     }
-    SgiSDK.prototype.instance = function () {
+    SgiSDK.instance = function () {
         if (SgiSDK._instance == null)
             SgiSDK._instance = new SgiSDK();
         return SgiSDK._instance;
