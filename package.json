@@ -1,6 +1,6 @@
 {
   "name": "sgi-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Système de gestion intégré SDK",
   "main": "index.js",
   "scripts": {

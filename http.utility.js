@@ -37,16 +37,17 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 exports.HttpUtility = void 0;
+var axios_1 = require("@nestjs/axios");
 var app_utility_1 = require("@trinix/app-utility");
 var dotenv = require("dotenv");
 var app_error_const_1 = require("./app.error.const");
 var HttpUtility = /** @class */ (function () {
-    function HttpUtility(httpService) {
+    function HttpUtility() {
+        this.httpService = new axios_1.HttpService();
         this._HOST = "";
         this._APPKEY = "";
         this._APPMAIL = "";
         try {
-            this.httpService = httpService;
             dotenv.config();
             this._HOST = process.env.SGI_HOST || "";
             this._APPKEY = process.env.SGI_TOKEN || "";

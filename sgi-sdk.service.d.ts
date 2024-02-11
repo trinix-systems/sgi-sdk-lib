@@ -1,4 +1,3 @@
-import { HttpService } from "@nestjs/axios";
 import { IService } from "@trinix/app-utility";
 import { CentreModel } from "./models/centre.model";
 export declare class SgiSDK extends IService {
@@ -6,7 +5,6 @@ export declare class SgiSDK extends IService {
     private htpUtility;
     private constructor();
     static instance(): SgiSDK;
-    init(httpService: HttpService): void;
     getCentre(code: string, username: string, token: string): Promise<CentreModel | null>;
     getCentres(username: string, token: string): Promise<CentreModel[] | null>;
 }

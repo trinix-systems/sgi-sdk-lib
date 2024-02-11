@@ -59,18 +59,15 @@ var centre_model_1 = require("./models/centre.model");
 var SgiSDK = /** @class */ (function (_super) {
     __extends(SgiSDK, _super);
     function SgiSDK() {
-        return _super.call(this) || this;
+        var _this = _super.call(this) || this;
+        _this.htpUtility = new http_utility_1.HttpUtility();
+        console.log('HttpService injected:', _this.htpUtility.httpService);
+        return _this;
     }
     SgiSDK.instance = function () {
         if (SgiSDK._instance == null)
             SgiSDK._instance = new SgiSDK();
         return SgiSDK._instance;
-    };
-    SgiSDK.prototype.init = function (httpService) {
-        if (!this.htpUtility) {
-            this.htpUtility = new http_utility_1.HttpUtility(httpService);
-            console.log('HttpService injected:', httpService);
-        }
     };
     SgiSDK.prototype.getCentre = function (code, username, token) {
         return __awaiter(this, void 0, void 0, function () {
