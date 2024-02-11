@@ -1,0 +1,32 @@
+{
+  "name": "sgi-sdk",
+  "version": "1.0.0",
+  "description": "Système de gestion intégré SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinix-systems/sgi-sdk-sources.git"
+  },
+  "keywords": [
+    "sdk",
+    "sgi"
+  ],
+  "author": "Christian EBOMA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinix-systems/sgi-sdk-sources/issues"
+  },
+  "homepage": "https://github.com/trinix-systems/sgi-sdk-sources#readme",
+  "dependencies": {
+    "@nestjs/axios": "^1.0.1",
+    "axios": "^1.2.2",
+    "dotenv": "^16.3.1",
+    "@trinix/app-utility": "ceboma/app-utility-sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5"
+  }
+}
