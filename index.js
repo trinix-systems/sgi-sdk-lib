@@ -16,3 +16,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 exports.__esModule = true;
 __exportStar(require("./sgi-sdk.module"), exports);
 __exportStar(require("./sgi-sdk.service"), exports);
+__exportStar(require("./models/centre.model"), exports);
+__exportStar(require("./models/entreprise.model"), exports);
