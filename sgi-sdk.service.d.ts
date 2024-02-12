@@ -3,7 +3,7 @@ import { CentreModel } from "./models/centre.model";
 export declare class SgiSDK extends IService {
     private static _instance;
     private htpUtility;
-    private constructor();
+    constructor();
     static instance(): SgiSDK;
     getCentre(code: string, username: string, token: string): Promise<CentreModel | null>;
     getCentres(username: string, token: string): Promise<CentreModel[] | null>;

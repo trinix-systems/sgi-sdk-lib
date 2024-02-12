@@ -17,7 +17,7 @@ var SgiSdkModule = /** @class */ (function () {
     SgiSdkModule = __decorate([
         (0, common_1.Module)({
             imports: [axios_1.HttpModule],
-            providers: [http_utility_1.HttpUtility],
+            providers: [sgi_sdk_service_1.SgiSDK, http_utility_1.HttpUtility],
             exports: [sgi_sdk_service_1.SgiSDK]
         })
     ], SgiSdkModule);
